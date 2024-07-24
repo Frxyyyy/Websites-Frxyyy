@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #191931;
+    color: #e1e1f1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "ounfit", sans-serif;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    gap: 1rem;
+}
+body p {
+    font-size: 20px;
+    font-family: 'comic sans ms';
+}
+.bg-text-animation {
+    position: absolute;
+    top: 15rem;
+    font-size: 8rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    -webkit-text-stroke: 2px #2d2d56;
+    -webkit-text-fill-color: transparent;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    z-index: -1;
+    user-select: none;
+}
+
+.my-foto {
+    width: 10rem;
+    border-radius: 50%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.sosmed i {
+    font-size: 2rem;
+    color: grey;
+}
+
+.sosmed i:hover {
+    color: white;
+}
+
+.sosmed a:not(:last-child) {
+    margin-right: 1rem;
+}
+
+ul {
+    width: 80%;
+    max-width: 40rem;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul.links li:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+.links {
+    margin-top: 1rem;
+}
+
+.link-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2d2d56;
+    padding: 1rem; 
+    border-radius: 20px;
+    box-shadow: 8px 10px 0 #0f0f25;
+    border: 2px solid #0f0f25;
+}
+
+.link-card:hover {
+    border: 2px solid white;
+}
+
+.links .link-icon {
+    background-image: linear-gradient(to top, purple, cyan);
+    padding: 0.5rem;
+    border-radius: 10px;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links .link-icon i {
+    color: white;
+}
+
+.link-action {
+    color: #8787A3;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.copyright {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.7rem;
+    color: #8787A3;
+    font-size: 0.7rem;
+}
+
+.copyright img {
+    width: 4rem;
+    opacity: 0.5;
+}
+
+#toast {
+    width: max-content;
+    position: fixed;
+    top: 0;
+}
+
+.toast-container {
+    top: 0;
+    background-color: white;
+    color: #0f0f25;
+    font: bold;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 1rem;
+    animation: muncul 300ms ease-in-out
+}
+
+.toast-gone {
+    animation: hilang 2s ease-in-out 2s;
+}
+
+@keyframes muncul {
+    from {
+        opacity: 0;
+        transform: translateY(-4rem);
+    }    
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes hilang {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
